@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 
 import "./App.css";
 
-import logo from "../assets/devflix.png"
-import searchIcon from "../assets/search.svg"
 import Moviecard from "../components/movieCard/moviecard";
 import Footer from "../components/footer/footer";
 import "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -38,14 +36,30 @@ const App = () => {
 
     return (
         <div id="app">
-            <div className="logo"><img src={logo} alt="logo devflix" /></div>
-            <div className="search"> <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyPress} placeholder="Pesquise por filmes" name="" id="" />
-                <img onClick={() => searchMovies(searchTerm)} src={searchIcon} alt="icone pesquisa" />
+            <div className="Barcima"></div>
+            <div className="NavEsquerda">
+                <p className="Titl">DEVFLIX</p>
+                <div className="search"> <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyPress} placeholder="Search " name="" id="" />
+                    <div className="classFilm">
+                        <p onClick={""}>Popular</p>
+                        <p onClick={""}>Ação</p>
+                        <p onClick={""}>Terror</p>
+                        <p onClick={""}>Animação</p>
+                        <p onClick={""}>Suspense</p>
+                        <p onClick={""}>Musical</p>
+                        <p onClick={""}>Comédia</p>
+                        <p onClick={""}>Aventura</p>
+                    </div>
+                </div>
             </div>
             {movies?.length > 0 ? (
+
                 <div className="container">
-                    {movies.map((movie) => (<Moviecard key={movie.imdbID} movies={movie} />))}
+                    <section className="sect">
+                        {movies.map((movie) => (<Moviecard key={movie.imdbID} movies={movie} />))}
+                    </section>
                 </div>
+
             ) : (
                 <div className="empty">
                     <h2>Nenhum filme encontrado 💔</h2>
@@ -53,7 +67,9 @@ const App = () => {
 
             )
             }
-            <Footer link={"https://github.com/"}> gustavo-lara</Footer>
+            <div className="rodape">
+
+            </div>
 
         </div>
     )

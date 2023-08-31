@@ -6,18 +6,15 @@
 import SocialLinks from "../socialLinks/socialLinks";
 import "./footer.module.css"
 
-const Footer = ({children,link}) => {
-    return(
+const Footer = ({ children, link }) => {
+    return (
         <footer>
             <p>
                 Feito com <ion-icon name="heart" /> por
                 <a href={link} target="_blank" rel="noopener noreferrer">{children}</a>
             </p>
-                <SocialLinks icon={"logo-instagram"} href={"#"}/>
-                <SocialLinks icon={"logo-facebook"} href={"#"}/>
-                <SocialLinks icon={"logo-twitter"} href={"#"}/>
-                <SocialLinks icon={"logo-github"} href={"#"}/>   
-            </footer>
+
+        </footer>
     );
 };
 

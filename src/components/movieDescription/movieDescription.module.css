@@ -16,7 +16,7 @@
     width: 850px;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-    background: #000;
+    background: #272829;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
     z-index: 1000;
     color: #fff;
@@ -27,7 +27,7 @@
 .movieInfo {
     width: 100%;
     border-radius: inherit;
-    background: #000;
+
     position: relative;
 }
 
@@ -44,14 +44,14 @@
 .btn {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     margin: 15px;
     width: 35px;
     height: 35px;
-    border-radius: 50%;
-    background: #181818;
+    background: none;
     color: #fff;
     cursor: pointer;
+    font-family: "Raleway", sans-serif;
 }
 
 .movieType{
@@ -59,8 +59,6 @@
     bottom: 0;
     width: 100%;
     height: 30%;
-    background: linear-gradient(#ffffff00, #000);
-
 }
 
 .movieType div:nth-of-type(1){
@@ -69,6 +67,7 @@
     left: 2em;
     color: #fff;
     text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
 
 }
 
@@ -81,15 +80,20 @@
 .movieType a {
     margin-top: 1em;
     padding: 0.2em 0.7em;
-    background: white;
+    background: #272829;
     border-radius: 0.2em;
     text-decoration: none;
     font-weight: bolder;
+    font-family: "Raleway", sans-serif;
+    color: rgb(72, 72, 72);
+    
 }
 
 .contInfo{
     display: flex;
     padding: 2em 2em 1em;
+    font-family: "Raleway", sans-serif;
+    font-size: smaller;
 }
 
 .contFlex{
@@ -99,6 +103,8 @@
 .desc{
     padding: 0 2em 2em;
     text-align: justify;
+    font-family: "Raleway", sans-serif;
+    font-size: smaller;
 }
 
 @media (max-width: 768px){

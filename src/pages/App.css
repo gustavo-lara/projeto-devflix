@@ -11,7 +11,7 @@
 }
 
 body{
-    background: #212426;
+    background: #61677A;
 }
 
 #app {
@@ -21,68 +21,121 @@ body{
     align-items: center;
     flex-direction: column;
 }
-
-.logo{
-    max-width: 100%;
-    overflow: hidden;
+.Barcima{
+    background-color: #272829;
+    position: absolute;
+    width: 400%;
+    height: 4em;
+    top: 0;
 }
 
-.logo img {
-    width: 70%;
-    height: auto;
-    margin: auto;
-    display: block;
+.Titl {
+    color: #fff;
+    padding-left: 5em;
+    padding-top: 2.5em;
+    font-family: "Raleway", sans-serif;
+}
+
+.NavEsquerda {
+    position: fixed;
+    background: #272829;
+    width: 15em;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+
 }
 
 .search{
-    width: 70%;
-    margin: 4rem 0 2rem;
+    position: absolute;
+    width: 12em;
+    height: 4em;
+    margin: 2rem 1.3rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 1.75rem;
-    border-radius: 4rem;
+    border-radius: 1rem;
+    border: #fff solid 0.05em;
     background: #1f2123;
-    box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+
 
 }
 
 .search input {
-    flex: 1;
-    border: none;
-    padding-right: 1rem;
+    padding-left: 0.5em;
     outline: none;
-    color: #a1a1a1;
-    background: #1f2123;
-    font-weight: 500;
-    font-size: 1.5rem;
+    background: none ;
+    font-weight: 500; 
+    font-size: 17px;
+    color: #fff;
+    width: 10em;
+
 }
 
-.search img {
-    width: 35px;
-    height: 35px;
+.classFilm {
+    position: absolute;
+    top: 5em;
+    left: 0em;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.00);
+    
+}
+
+.classFilm p{
     cursor: pointer;
+    margin-top: 1em;
+    border: #fff solid 0.05em;
+    border-radius: 0.2em;
+    display: flex;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 2em;
+    width: 10.5em;
+    padding-top: 0.4em;
+    padding-left: 0.5em;
+    font-family:"Raleway", sans-serif; ;
+
 }
 
 .empty{
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 19%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Raleway", sans-serif;
+    
 
     color: #f0f0f0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.container{
-    width: 100%;
-    margin-top: 3rem;
+.sect{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.container{
+    margin-top: 3rem;
+    margin-left: 160em;
+    overflow-x: 10px;
+    display: flex;
+    overflow-x: auto;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    padding-bottom: 2em;
+}
+
+.rodape {
+    position: absolute;
+    background: #272829;
+    width: 400%;
+    height: 2em;
+    bottom: 0px;
 }
 
 @media screen and (max-width: 600px){
