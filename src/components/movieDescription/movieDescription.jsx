@@ -24,7 +24,7 @@ const MovieDesc = ({ movies, click }) => {
                     <button className={styles.btn} onClick={click}>X</button>
                     <div className={styles.movieType}>
                         <div>
-                            <img src={devFlix} alt="Logo DEVFLIX" />{movie.Type}
+                            {movie.Type}
                             <h2>{movie.Title}</h2>
                             <a href={`https://google.com/search?q=${encodeURIComponent(movie.Title)}`} target="_blank">▶</a>
                         </div>

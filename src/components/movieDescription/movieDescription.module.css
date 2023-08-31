@@ -13,7 +13,7 @@
     position: fixed;
     top: 50%;
     left: 50%;   
-    width: 850px;
+    width: 800px;
     transform: translate(-50%, -50%);
     border-radius: 10px;
     background: #272829;
@@ -34,7 +34,7 @@
 .movieInfo img{
     position: relative;
     width: 100%;
-    height: 480px;
+    height: 450px;
     object-fit: cover;
     object-position: top;
     border-top-left-radius: 10px;
@@ -56,6 +56,7 @@
 
 .movieType{
     position: absolute;
+    padding: 1em;
     bottom: 0;
     width: 100%;
     height: 30%;
@@ -68,6 +69,7 @@
     color: #fff;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
+    padding: 1em;
 
 }
 
@@ -78,14 +80,17 @@
 }
 
 .movieType a {
-    margin-top: 1em;
     padding: 0.2em 0.7em;
+    top: 4em;
+    position: absolute;
+    text-align: center;
     background: #272829;
     border-radius: 0.2em;
     text-decoration: none;
     font-weight: bolder;
     font-family: "Raleway", sans-serif;
     color: rgb(72, 72, 72);
+    width: 10em;
     
 }
 
@@ -94,6 +99,7 @@
     padding: 2em 2em 1em;
     font-family: "Raleway", sans-serif;
     font-size: smaller;
+
 }
 
 .contFlex{
@@ -105,6 +111,8 @@
     text-align: justify;
     font-family: "Raleway", sans-serif;
     font-size: smaller;
+    white-space: normal;
+
 }
 
 @media (max-width: 768px){

@@ -15,7 +15,7 @@ const App = () => {
     const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}`
 
     useEffect(() => {
-        searchMovies("Batman")
+        searchMovies("Dragon Ball")
     }, []);
 
     const searchMovies = async (title) => {
