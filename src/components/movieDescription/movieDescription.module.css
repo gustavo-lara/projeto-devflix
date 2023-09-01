@@ -5,7 +5,6 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    z-index: 999;
     animation: fadeIn 0.3s ease-in-out forwards;
     padding-top: 2em;
 }
@@ -19,16 +18,17 @@
     border-radius: 10px;
     background: #272829;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
-    z-index: 1000;
     color: #fff;
     max-height: 100vh;
     animation: fadeIn 0.3s ease-in-out forwards;
+    z-index: 50;
 }
 
 .movieInfo {
     width: 100%;
     border-radius: inherit;
     position: relative;
+    z-index: 50;
 }
 
 .movieInfo img{
@@ -39,6 +39,7 @@
     object-position: top;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    z-index: 50;
 }
 
  .btn {
@@ -52,12 +53,14 @@
     color: #fff;
     cursor: pointer;
     font-family: "Raleway", sans-serif;
+    z-index: 50;
 } 
 .contInfo h2{
     color: gray;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     padding-left: 1em;
+    z-index: 50;
 }
 
 .contInfo p {
@@ -67,9 +70,10 @@
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     padding-top: 1em;
+    z-index: 50;
 }
 
-.contInfo a{
+/* .contInfo a{
     padding: 0.2em 0.7em;
     right: 0em;
     position: absolute;
@@ -82,7 +86,7 @@
     color: #fff;
     width: 10em;
     margin-right: 2em;
-}
+} */
 
   /* .movieType{
     position: absolute;
@@ -142,6 +146,7 @@
     padding-top: 1em;
     padding-bottom: 1em;
     font-family: "Raleway", sans-serif;
+
 }
 
 .desc{
@@ -151,12 +156,14 @@
     font-size: smaller;
     white-space: normal;
 
+
 }
 
-@media (max-width: 430px){
+@media (max-width: 450px){
     .movieModal{
         width: 320px;
-        top: 14%;
+        top: 58%;
+
     }
     .movieType{
         font-size: 15pt;
@@ -173,12 +180,9 @@
     .contInfo a{
         margin-top: 0.8em;
         margin-left: 1em;
-        display: block;
-    }
-    .btn {
-        padding-top: 2em;
 
     }
+
 }
 
 

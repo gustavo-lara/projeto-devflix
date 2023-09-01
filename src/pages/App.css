@@ -8,6 +8,7 @@
     border: 0;
     box-sizing: border-box;
     --font-raleway: "Raleway", sans-serif;
+ 
 }
 
 body{
@@ -137,6 +138,9 @@ body{
     color: #f0f0f0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.app section{
+    display: flex;
+}
 .sect{
     display: flex;
 }
@@ -165,52 +169,35 @@ body{
 
 }
 
-@media screen and (max-width: 600px){
-    .body{
-        height: 500px;
-        width: 430px;
-    }
+@media screen and (max-width: 450px){
     .NavEsquerda {
         display: none;
     }
+    .app section{
+        display: block;
+    }
+    .sect{
+        display: block;
+    }
     .container{
-        margin-left: 200em;
+        margin-right: 160em;
         margin-top: 6em;
     }
 
     .Barcima{
         height: 8em;
+        z-index: 99;
 
     }
     .searchMobile{
         display: flex;
         position: fixed;
+        z-index: 100;
     }
     .searchMobile input{
         position: fixed;
+        z-index: 101;
     }
 
 }
 
-@media screen and (max-width: 600px) {
-
-    .NavEsquerda {
-        display: none;
-    }
-    .container{
-        margin-left: 200em;
-        margin-top: 6em;
-    }
-
-    .Barcima{
-        height: 8em;
-        position: fixed;
-    }
-    .searchMobile{
-        display: block;
-        position: fixed;
-    }
-    .searchMobile input{
-        position: fixed;
-    }
-}
