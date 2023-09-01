@@ -15,6 +15,7 @@ body{
 }
 
 #app {
+    height: 100%;
     padding: 4em;
     display: flex;
     justify-content: center;
@@ -62,17 +63,18 @@ body{
 }
 
 .searchMobile{
-    position: fixed;
     width: 12em;
     height: 3.5em;
     top: 2.5em;
-    left: 5.2em;
+    left: 3em;
     border-radius: 1rem;
     background-color: #272829;
     border: #fff solid 0.05em;
+    
     display: none;
     padding-top: 1em;
     position: fixed;
+    z-index: 13;
     
 }
 
@@ -154,18 +156,44 @@ body{
 }
 
 .rodape {
-    position: absolute;
+    position: fixed;
     background: #272829;
-    width: 400%;
+    width: 200%;
     height: 2em;
     bottom: 0px;
     position: fixed;
+
 }
 
 @media screen and (max-width: 600px){
     .body{
-        height: 425px;
+        height: 500px;
+        width: 430px;
     }
+    .NavEsquerda {
+        display: none;
+    }
+    .container{
+        margin-left: 200em;
+        margin-top: 6em;
+    }
+
+    .Barcima{
+        height: 8em;
+
+    }
+    .searchMobile{
+        display: flex;
+        position: fixed;
+    }
+    .searchMobile input{
+        position: fixed;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
     .NavEsquerda {
         display: none;
     }
@@ -180,10 +208,9 @@ body{
     }
     .searchMobile{
         display: block;
+        position: fixed;
     }
-
-}
-
-@media screen and (max-width: 400px) {
-
+    .searchMobile input{
+        position: fixed;
+    }
 }

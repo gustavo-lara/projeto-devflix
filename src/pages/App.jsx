@@ -36,8 +36,8 @@ const App = () => {
     return (
         <div id="app">
             <div className="Barcima">
+            <div className="searchMobile"> <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyPress} placeholder="Search " name="" id="" /></div>
             </div>
-                <div className="searchMobile"> <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyPress} placeholder="Search " name="" id="" /></div>
                 <div className="NavEsquerda">
                     <p className="Titl">DEVFLIX</p>
             <div className="search"> <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyPress} placeholder="Search " name="" id="" />
