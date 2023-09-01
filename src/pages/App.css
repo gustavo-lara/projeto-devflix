@@ -64,7 +64,7 @@ body{
 }
 
 .searchMobile{
-    width: 12em;
+    width: 20em;
     height: 3.5em;
     top: 2.5em;
     left: 3em;
@@ -76,7 +76,7 @@ body{
     padding-top: 1em;
     position: fixed;
     z-index: 13;
-    
+
 }
 
 .searchMobile input{
@@ -197,6 +197,9 @@ body{
     .searchMobile input{
         position: fixed;
         z-index: 101;
+    }
+    .footer{
+        display: none;
     }
 
 }

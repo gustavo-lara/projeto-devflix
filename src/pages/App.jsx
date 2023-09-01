@@ -71,10 +71,7 @@ const App = () => {
 
             )
             }
-            <div className="rodape">
 
-
-            </div>
 
         </div>
     )
