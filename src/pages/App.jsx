@@ -49,9 +49,12 @@ const App = () => {
                         <p onClick={""}>Musical</p>
                         <p onClick={""}>Comédia</p>
                         <p onClick={""}>Aventura</p>
+
                     </div>
                 </div>
+
             </div>
+
             {movies?.length > 0 ? (
 
                 <div className="container">
@@ -68,6 +71,7 @@ const App = () => {
             )
             }
             <div className="rodape">
+
 
             </div>
 

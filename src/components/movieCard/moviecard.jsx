@@ -14,7 +14,7 @@ const Moviecard = ({ movies }) => {
         <>
             <div className={styles.movie} onClick={toggleModal}>
                 <div>
-                    <p>{movie.Year}</p>
+
                 </div>
                 <div>
                     <img src={movie.Poster != "N/A" ? movie.Poster : "https://via.placehoder.com/400"} alt={movie.Title} />
