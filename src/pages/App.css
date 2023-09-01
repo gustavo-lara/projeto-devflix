@@ -30,6 +30,9 @@ body{
     height: 4em;
     top: 0;
     position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .Titl {
@@ -64,7 +67,7 @@ body{
 }
 
 .searchMobile{
-    width: 20em;
+    width: 12em;
     height: 3.5em;
     top: 2.5em;
     left: 3em;
@@ -73,9 +76,10 @@ body{
     border: #fff solid 0.05em;
     
     display: none;
-    padding-top: 1em;
+    top: 2em;
     position: fixed;
     z-index: 13;
+
 
 }
 
@@ -88,6 +92,7 @@ body{
     width: 10em;
     margin-left: 10px;
     position: fixed;
+    top: 2.9em;
 }
 
 .search input {
