@@ -72,6 +72,7 @@ body{
     border: #fff solid 0.05em;
     display: none;
     padding-top: 1em;
+    position: fixed;
     
 }
 
