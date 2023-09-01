@@ -23,14 +23,14 @@ const MovieDesc = ({ movies, click }) => {
                     <img src={movies.Poster} alt={movie.Title} />
                     <button className={styles.btn} onClick={click}>X</button>
                     <div className={styles.movieType}>
-                        <div>
-                            {movie.Type}
-                            <h2>{movie.Title}</h2>
-                            <a href={`https://google.com/search?q=${encodeURIComponent(movie.Title)}`} target="_blank">▶</a>
-                        </div>
                     </div>
                 </div>
                 <div className={styles.contInfo}>
+                            <div className="Tinfo">
+                            <p>{movie.Type}</p>
+                            <h2>{movie.Title}</h2>
+                            <a href={`https://google.com/search?q=${encodeURIComponent(movie.Title)}`} target="_blank">▶</a></div>
+
                     <div className={styles.contFlex}>
                         Avaliação: {movie.imdbRating} | {movie.Year}
                     </div>
