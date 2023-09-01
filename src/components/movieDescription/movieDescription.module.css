@@ -63,6 +63,7 @@
     text-transform: uppercase;
     padding-left: 1em;
     z-index: 50;
+
 }
 
 .contInfo p {
@@ -73,6 +74,7 @@
     font-family: "Raleway", sans-serif;
     padding-top: 1em;
     z-index: 50;
+
 }
 
  .contInfo a{
@@ -88,6 +90,7 @@
     color: #fff;
     width: 10em;
     margin-right: 2em;
+
 } 
 
   /* .movieType{
@@ -175,6 +178,10 @@
     .movieInfo img{
         height: 220px;
 
+    }
+    .contInfo h2{
+        font-size: 1em;
+        padding-left: 1.4em;
     }
 
     .desc{
