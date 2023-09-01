@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 import Moviecard from "../components/movieCard/moviecard";
-import Footer from "../components/footer/footer";
-import "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+import "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js";
 
 
 const App = () => {
@@ -36,10 +35,12 @@ const App = () => {
 
     return (
         <div id="app">
-            <div className="Barcima"></div>
-            <div className="NavEsquerda">
-                <p className="Titl">DEVFLIX</p>
-                <div className="search"> <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyPress} placeholder="Search " name="" id="" />
+            <div className="Barcima">
+            </div>
+                <div className="searchMobile"> <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyPress} placeholder="Search " name="" id="" /></div>
+                <div className="NavEsquerda">
+                    <p className="Titl">DEVFLIX</p>
+            <div className="search"> <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyPress} placeholder="Search " name="" id="" />
                     <div className="classFilm">
                         <p onClick={""}>Popular</p>
                         <p onClick={""}>Ação</p>

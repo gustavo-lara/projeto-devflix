@@ -59,12 +59,34 @@ body{
     border-radius: 1rem;
     border: #fff solid 0.05em;
     background: #1f2123;
+}
 
+.searchMobile{
+    position: fixed;
+    width: 12em;
+    height: 3.5em;
+    top: 2.5em;
+    left: 5.2em;
+    border-radius: 1rem;
+    background-color: #272829;
+    border: #fff solid 0.05em;
+    display: none;
+    padding-top: 1em;
+    
+}
 
+.searchMobile input{
+    outline: none;
+    background: none ;
+    font-weight: 500; 
+    font-size: 17px;
+    color: #fff;
+    width: 10em;
+    margin-left: 10px;
+    position: fixed;
 }
 
 .search input {
-    padding-left: 0.5em;
     outline: none;
     background: none ;
     font-weight: 500; 
@@ -128,8 +150,6 @@ body{
     justify-content: space-evenly;
     white-space: nowrap;
     padding-bottom: 2em;
-    
-    
 }
 
 .rodape {
@@ -142,22 +162,27 @@ body{
 }
 
 @media screen and (max-width: 600px){
+    .body{
+        height: 425px;
+    }
+    .NavEsquerda {
+        display: none;
+    }
+    .container{
+        margin-left: 200em;
+        margin-top: 6em;
+    }
 
+    .Barcima{
+        height: 8em;
+        position: fixed;
+    }
+    .searchMobile{
+        display: block;
+    }
 
 }
 
 @media screen and (max-width: 400px) {
-    .app{
-        padding: 4rem 1rem;
-    }
-    .h1{
-        font-size:2rem;    
-    }
-    .container{
-        margin-top: 2rem;
-    }
-    .movie{
-        width: 100%;
-        margin: 1rem;
-    }
+
 }
